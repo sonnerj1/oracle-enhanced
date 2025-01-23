@@ -32,6 +32,9 @@ Layout/ClosingParenthesisIndentation:
 Layout/CommentIndentation:
   Enabled: true
 
+Layout/DefEndAlignment:
+  Enabled: true
+
 Layout/ElseAlignment:
   Enabled: true
 
@@ -69,6 +72,9 @@ Layout/EmptyLinesAroundMethodBody:
 
 # In a regular module definition, no empty lines around the body.
 Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+Lint/SafeNavigationChain:
   Enabled: true
 
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
@@ -180,6 +186,11 @@ Lint/AmbiguousOperator:
 
 Lint/AmbiguousRegexpLiteral:
   Enabled: true
+
+Lint/Debugger:
+  Enabled: true
+  DebuggerRequires:
+    - debug
 
 Lint/DuplicateRequire:
   Enabled: true
